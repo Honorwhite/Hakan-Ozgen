@@ -1992,7 +1992,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* about us page  */
 /* services page banner section */
 .services-banner-sec {
-    background: url(../images/services-banner-img.jpg) no-repeat center;
+    background: url(../images/counter-section-bg-img.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -2008,57 +2008,64 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .category-box {
-    display: flex;
-    flex-direction: column;
+    background: #fff;
+    padding: 30px;
     border-radius: 10px;
-    transition: .3s ease-in-out;
-    background: var(--white-color);
-    box-shadow: 2px 2px 52px 6px rgb(36 63 250 / 4%);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.category-box>figure {
-    overflow: hidden;
-    border-radius: 10px 10px 0 0;
+.category-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
 }
 
-.category-box>figure img {
-    width: 255px;
-    height: 205px;
-    object-fit: cover;
-    transition: .3s ease-in-out;
-}
-
-.category-box:hover>figure img {
-    scale: 1.1;
-}
-
-.category-details figure {
-    height: 70px;
-    width: 70px;
-    border-radius: 100%;
+.service-icon {
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--accent);
-    position: absolute;
-    top: -37px;
-    left: 28px;
+    background: rgba(80, 22, 27, 0.1);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
 }
 
-.category-details a {
-    font-weight: 500;
-    font-size: 15px;
-    color: var(--accent);
-    display: inline-block;
-    margin-top: auto;
+.category-box:hover .service-icon {
+    background: #50161b;
+}
+
+.category-box:hover .service-icon i {
+    color: #fff !important;
+}
+
+.category-details {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .category-details h4 {
-    margin-bottom: 13px;
+    margin: 15px 0;
+    color: #50161b;
 }
 
 .category-details p {
-    margin-bottom: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.category-details a {
+    color: #50161b;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.category-details a:hover {
+    color: #50161b;
+    opacity: 0.8;
 }
 
 /* services page banner section */
@@ -2859,4 +2866,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 20px;
+}
+
+.blog-posts.blogpage-section {
+    padding-bottom: 0;
+}
+
+.get-in-touch-section {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.singleblog-section .main-box {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.singleblog-section .content1 {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
