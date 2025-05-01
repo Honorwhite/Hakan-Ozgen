@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="assets/css/superclasses.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lc0tiorAAAAACIKqA5qtBjrkxFtMlibef3LWUws"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfRuiorAAAAAAyMS_VT1ZjWrCNRnRmzaqyn-yNN"></script>
 </head>
 
 <body>
@@ -241,13 +241,13 @@
         AOS.init();
     </script>
     <script>
-        $(document).ready(function() {
-            $('#contactpage').submit(function(e) {
+        $(document).ready(function () {
+            $('#contactpage').submit(function (e) {
                 e.preventDefault();
-                
+
                 // reCAPTCHA token al
-                grecaptcha.ready(function() {
-                    grecaptcha.execute('6Lc0tiorAAAAACIKqA5qtBjrkxFtMlibef3LWUws', {action: 'submit'}).then(function(token) {
+                grecaptcha.ready(function () {
+                    grecaptcha.execute('6LfRuiorAAAAAAyMS_VT1ZjWrCNRnRmzaqyn-yNN', { action: 'submit' }).then(function (token) {
                         // Form verilerini hazırla
                         var formData = {
                             adSoyad: $('#fname').val(),
@@ -260,15 +260,15 @@
 
                         // AJAX isteği gönder
                         $.ajax({
-                            url: 'https://randevu-backend2.vercel.app/api/randevu',
+                            url: 'API_ENDPOINT',
                             type: 'POST',
                             data: JSON.stringify(formData),
                             contentType: 'application/json',
-                            success: function(response) {
+                            success: function (response) {
                                 alert('Randevu talebiniz başarıyla alındı. En kısa sürede sizinle iletişime geçeceğiz.');
                                 $('#contactpage')[0].reset();
                             },
-                            error: function(xhr, status, error) {
+                            error: function (xhr, status, error) {
                                 alert('Bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.');
                                 console.error('Hata:', error);
                             }
