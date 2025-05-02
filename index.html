@@ -56,6 +56,60 @@
             border-color: #50161b;
             box-shadow: 0 0 5px rgba(80, 22, 27, 0.5);
         }
+
+        /* WhatsApp Button Styles */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            animation: none;
+        }
+
+        .whatsapp-button i {
+            font-size: 32px;
+            color: white;
+        }
+
+        .whatsapp-button:hover i {
+            color: white;
+        }
     </style>
 </head>
 
@@ -316,10 +370,10 @@
                         </ul>
                     </div>
                     <div class="generic-btn">
-                        <a href="about-us.html" data-lang="moreInfo">
+                        <a href="hakkimizda.html" data-lang="moreInfo">
                             Daha Fazla
                         </a>
-                        <a href="about-us.html">
+                        <a href="hakkimizda.html">
                             <figure class="mb-0">
                                 <img src="assets/images/long-arrow.png" alt="long-arrow">
                             </figure>
@@ -983,6 +1037,10 @@
             changeLanguage(savedLanguage);
         });
     </script>
+    <a href="https://wa.me/905551022390?text=Merhaba,%20Op.%20Dr.%20Hakan%20Özgen%20ile%20görüşmek%20istiyorum."
+        class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 
 </html>
