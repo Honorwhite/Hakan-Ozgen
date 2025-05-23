@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
@@ -20,97 +20,14 @@
     <link rel="stylesheet" href="assets/css/superclasses.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
-    <style>
-        .language-switcher {
-            margin-left: 15px;
-            display: flex;
-            gap: 5px;
-        }
-
-        .language-switcher button {
-            padding: 0;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            background: transparent;
-            border: 1px solid #50161b;
-            width: 32px;
-            height: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .language-switcher button .flag-icon {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .language-switcher button.active {
-            border-color: #50161b;
-            box-shadow: 0 0 5px rgba(80, 22, 27, 0.5);
-        }
-
-        .language-switcher button:hover {
-            border-color: #50161b;
-            box-shadow: 0 0 5px rgba(80, 22, 27, 0.5);
-        }
-
-        /* WhatsApp Button Styles */
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            background-color: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            text-decoration: none;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-
-            0%,
-            20%,
-            50%,
-            80%,
-            100% {
-                transform: translateY(0);
-            }
-
-            40% {
-                transform: translateY(-20px);
-            }
-
-            60% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .whatsapp-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-            animation: none;
-        }
-
-        .whatsapp-button i {
-            font-size: 32px;
-            color: white;
-        }
-
-        .whatsapp-button:hover i {
-            color: white;
-        }
-    </style>
+    <!-- Faviconlar -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#50161b">
+    <meta name="msapplication-TileColor" content="#50161b">
+    <meta name="theme-color" content="#50161b">
 </head>
 
 <body>
@@ -127,11 +44,10 @@
         <div class="wrapper">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <a class="navbar-brand" href="index.html">
-                    <figure class="mb-0">
-                        <img src="assets/images/logo.png" alt="logo">
-                    </figure>
+                    <h1 class="navbar-brand-text mb-0" style="font-size: 1.5rem;">
+                        Hakan Özgen</h1>
                 </a>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                <button class=" navbar-toggler collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -147,7 +63,8 @@
                             <a class="nav-link p-0" href="hakkimizda.html" data-lang="about">Hakkımızda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="hizmetler.html" data-lang="services">Uzmanlık Alanları</a>
+                            <a class="nav-link p-0" href="hizmetler.html" data-lang="services">Uzmanlık
+                                Alanları</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link p-0" href="blog.html" data-lang="blog">Blog</a>
@@ -272,7 +189,7 @@
                     <h4 data-lang="varisTitle">Varis Tedavisi</h4>
                     <p data-lang="varisDesc">Lazer tedavisi, köpük skleroterapi ve radyofrekans gibi modern yöntemlerle
                         hastalarınızın hem sağlık hem de estetik kaygılarına çözüm sunuyoruz.</p>
-                    <a href="hizmetler.html" data-lang="detailedInfo">Detaylı Bilgi <i
+                    <a href="adana_varis_tedavisi.html" data-lang="detailedInfo">Detaylı Bilgi <i
                             class="fas fa-angle-right"></i></a>
                 </div>
                 <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
@@ -282,7 +199,8 @@
                     <h4 data-lang="botoksTitle">Botoks</h4>
                     <p data-lang="botoksDesc">Ciltteki ince çizgi ve kırışıklıkları gidermek için güvenli ve etkili
                         çözüm. Doğallığı ön planda tutarak, bireysel yaklaşım sunuyoruz.</p>
-                    <a href="hizmetler.html">Detaylı Bilgi <i class="fas fa-angle-right"></i></a>
+                    <a href="adana_botoks_tedavisi.html" data-lang="detailedInfo">Detaylı Bilgi <i
+                            class="fas fa-angle-right"></i></a>
                 </div>
                 <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
                     <figure>
@@ -291,7 +209,8 @@
                     <h4 data-lang="endoliftingTitle">Endolifting</h4>
                     <p data-lang="endoliftingDesc">Ameliyatsız yüz germe ve cilt gençleştirme uygulamaları ile yüzünüzde
                         doğal ve kalıcı bir görünüm elde etmenizi sağlıyoruz.</p>
-                    <a href="hizmetler.html">Detaylı Bilgi <i class="fas fa-angle-right"></i></a>
+                    <a href="adana_endolifting.html" data-lang="detailedInfo">Detaylı Bilgi <i
+                            class="fas fa-angle-right"></i></a>
                 </div>
                 <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
                     <figure>
@@ -300,7 +219,18 @@
                     <h4 data-lang="bacakTitle">Bacak Estetiği</h4>
                     <p data-lang="bacakDesc">Hem sağlık hem de estetik açıdan bütüncül bacak tedavileri ile
                         bacaklarınızın hem görüntüsünü hem de sağlığını iyileştiriyoruz.</p>
-                    <a href="hizmetler.html">Detaylı Bilgi <i class="fas fa-angle-right"></i></a>
+                    <a href="adana_bacak_estetigi.html" data-lang="detailedInfo">Detaylı Bilgi <i
+                            class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                    <figure>
+                        <i class="fas fa-globe-americas fa-3x" style="color: #50161b;"></i>
+                    </figure>
+                    <h4 data-lang="healthTourismTitle">Sağlık Turizmi</h4>
+                    <p data-lang="healthTourismDesc">Uluslararası hastalarımıza kaliteli sağlık hizmeti ve konforlu bir
+                        tedavi süreci sunuyoruz.</p>
+                    <a href="sertifikali_saglik_turizmi.html" data-lang="detailedInfo">Detaylı Bilgi <i
+                            class="fas fa-angle-right"></i></a>
                 </div>
                 <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
                     <figure>
@@ -309,26 +239,17 @@
                     <h4 data-lang="mikroTitle">Mikro Cerrahi</h4>
                     <p data-lang="mikroDesc">Modern mikro cerrahi teknikleriyle minimal invaziv varis tedavisi
                         uyguluyoruz.</p>
-                    <a href="hizmetler.html">Detaylı Bilgi <i class="fas fa-angle-right"></i></a>
+                    <a href="adana_mikro_cerrahi_uzmani.html" data-lang="detailedInfo">Detaylı Bilgi <i
+                            class="fas fa-angle-right"></i></a>
                 </div>
-                <div class="service-provide-box" data-aos="fade-up" data-aos-duration="700">
-                    <div class="service-provide-title">
-                        <h3 data-lang="beautyTitle">Güzellik ve Sağlık<br>Bir Arada</h3>
-                        <p data-lang="beautyDesc">Doğal güzelliği ön planda tutuyoruz.</p>
-                        <div class="provide-btn d-flex align-items-center">
-                            <a href="iletisim.html" data-lang="appointment">Randevu Al</a>
-                            <a href="iletisim.html" class="provide-arrow">
-                                <figure class="mb-0 d-flex align-items-center justify-content-center">
-                                    <img src="assets/images/samll-arrow.png" alt="top-arrow">
-                                </figure>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="service-provide-img">
-                        <figure class="mb-0">
-                            <img src="assets/images/saglik.jpg" alt="hakan özgen">
-                        </figure>
-                    </div>
+                <div class="service-box-item beauty-health-box" data-aos="fade-up" data-aos-duration="700">
+                    <figure>
+                        <i class="fas fa-heart fa-3x" style="color: #ffffff;"></i>
+                    </figure>
+                    <h4 data-lang="beautyTitle" style="color: #ffffff;">Güzellik ve Sağlık Bir Arada</h4>
+                    <p data-lang="beautyDesc" style="color: #ffffff;">Doğal güzelliği ön planda tutuyoruz.</p>
+                    <a href="iletisim.html" data-lang="appointment"
+                        style="color: #ffffff; border-color: #ffffff;">Randevu Al <i class="fas fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
@@ -359,14 +280,14 @@
                         seviye varis tedavisi gibi hizmetler sunmaktadır.</p>
                     <div class="generic-list">
                         <ul class="list-unstyled mb-0">
-                            <li>Varis Tedavisi</li>
-                            <li>Botoks</li>
-                            <li>Estetik Uygulamalar</li>
+                            <li data-lang="varisTedavisi">Varis Tedavisi</li>
+                            <li data-lang="botoks">Botoks</li>
+                            <li data-lang="estetikUygulamalar">Estetik Uygulamalar</li>
                         </ul>
                         <ul class="list-unstyled mb-0">
-                            <li>Dudak Dolgusu</li>
-                            <li>Bacak Estetiği</li>
-                            <li>Kişiye Özel Tedaviler</li>
+                            <li data-lang="dudakDolgu">Dudak Dolgusu</li>
+                            <li data-lang="bacakEstetigi">Bacak Estetiği</li>
+                            <li data-lang="kisiyeOzelTedaviler">Kişiye Özel Tedaviler</li>
                         </ul>
                     </div>
                     <div class="generic-btn">
@@ -653,20 +574,36 @@
                     </figure>
                     <p data-lang="footerDesc">Kalp ve damar cerrahisindeki uzmanlığımızı, estetik uygulamalarla
                         birleştirerek kişiye özel çözümler sunuyoruz.</p>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-angle-right"></i><a href="kvkk.html" data-lang="footerKVKK"> KVKK</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="gizlilik_cerez_politikasi.html"
+                                data-lang="footerGizlilik"> Gizlilik ve Çerez Politikası</a></li>
+                    </ul>
                 </div>
                 <div class="footer-box footer-pages-links">
                     <h4 data-lang="footerServices">Hizmetlerimiz</h4>
                     <ul class="list-unstyled mb-0">
-                        <li><i class="fas fa-angle-right"></i><a href="hizmetler.html" data-lang="footerVaris">Varis
-                                Tedavisi</a></li>
-                        <li><i class="fas fa-angle-right"></i><a href="hizmetler.html"
-                                data-lang="footerBotoks">Botoks</a></li>
-                        <li><i class="fas fa-angle-right"></i><a href="hizmetler.html" data-lang="footerDolgu">Dolgu</a>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_varis_tedavisi.html"
+                                data-lang="footerVaris">Adana Varis Tedavisi</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_botoks_tedavisi.html"
+                                data-lang="footerBotoks">Adana
+                                Botoks Tedavisi</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_yuz_dudak_dolgusu.html"
+                                data-lang="footerDolgu">Adana Yüz ve Dudak Dolgusu</a>
                         </li>
-                        <li><i class="fas fa-angle-right"></i><a href="hizmetler.html" data-lang="footerBacak">Bacak
+                        <li><i class="fas fa-angle-right"></i><a href="adana_bacak_estetigi.html"
+                                data-lang="footerBacak">Adana Bacak
                                 Estetiği</a></li>
-                        <li><i class="fas fa-angle-right"></i><a href="hizmetler.html" data-lang="footerEstetik">Estetik
-                                Uygulamalar</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_medikal_cilt_bakimi.html"
+                                data-lang="footerMedikal">Adana Medikal Cilt Bakımı</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_mikro_cerrahi_uzmani.html"
+                                data-lang="footerMikro">Adana Mikro Cerrahi Uzmanı</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_endolifting.html"
+                                data-lang="footerEndolifting">Adana Endolifting</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="sertifikali_saglik_turizmi.html"
+                                data-lang="footerSertifikali">Sertifikalı Sağlık Turizmi</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="hakan_ozgen.html" data-lang="footerHakan">Hakan
+                                Özgen</a></li>
                     </ul>
                 </div>
                 <div class="footer-box contact-details-box">
@@ -913,10 +850,10 @@
                 specialtyAreas: "Uzmanlık Alanı",
                 footerDesc: "Kalp ve damar cerrahisindeki uzmanlığımızı, estetik uygulamalarla birleştirerek kişiye özel çözümler sunuyoruz.",
                 footerServices: "Hizmetlerimiz",
-                footerVaris: "Varis Tedavisi",
-                footerBotoks: "Botoks",
-                footerDolgu: "Dolgu",
-                footerBacak: "Bacak Estetiği",
+                footerVaris: "Adana Varis Tedavisi",
+                footerBotoks: "Adana Botoks Tedavisi",
+                footerDolgu: "Adana Yüz ve Dudak Dolgusu",
+                footerBacak: "Adana Bacak Estetiği",
                 footerEstetik: "Estetik Uygulamalar",
                 footerContact: "İletişim",
                 footerAddress: "Reşatbey mah. Stadyum Cd. No:27 Onur Apt kat:1, Adana, Turkey",
@@ -931,7 +868,15 @@
                 bannerStats4: "15+",
                 bannerStats5: "Yıllık",
                 bannerStats6: "Deneyim",
-                bannerDescription: "Modern bir anlayışla tasarlanmış kliniğimiz, klasik bir muayenehaneden çok, bireylerin kendilerini değerli hissedebilecekleri bir güzellik merkezi olarak hizmet vermektedir."
+                bannerDescription: "Modern bir anlayışla tasarlanmış kliniğimiz, klasik bir muayenehaneden çok, bireylerin kendilerini değerli hissedebilecekleri bir güzellik merkezi olarak hizmet vermektedir.",
+                healthTourismTitle: "Sağlık Turizmi",
+                healthTourismDesc: "Uluslararası hastalarımıza kaliteli sağlık hizmeti ve konforlu bir tedavi süreci sunuyoruz.",
+                varisTedavisi: "Varis Tedavisi",
+                botoks: "Botoks",
+                estetikUygulamalar: "Estetik Uygulamalar",
+                dudakDolgu: "Dudak Dolgusu",
+                bacakEstetigi: "Bacak Estetiği",
+                kisiyeOzelTedaviler: "Kişiye Özel Tedaviler"
             },
             en: {
                 home: "Home",
@@ -1007,7 +952,15 @@
                 bannerStats6: "Experience",
                 bannerReview: "5.0",
                 bannerReviewText: "Google Reviews",
-                bannerDescription: "Our clinic, designed with a modern approach, serves as a beauty center where individuals can feel valued, rather than just a traditional medical practice."
+                bannerDescription: "Our clinic, designed with a modern approach, serves as a beauty center where individuals can feel valued, rather than just a traditional medical practice.",
+                healthTourismTitle: "Health Tourism",
+                healthTourismDesc: "We provide quality healthcare services and a comfortable treatment process for our international patients.",
+                varisTedavisi: "Varicose Vein Treatment",
+                botoks: "Botox",
+                estetikUygulamalar: "Aesthetic Applications",
+                dudakDolgu: "Lip Fillers",
+                bacakEstetigi: "Leg Aesthetics",
+                kisiyeOzelTedaviler: "Personalized Treatments"
             }
         };
 

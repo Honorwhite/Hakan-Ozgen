@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
@@ -20,6 +20,14 @@
     <link rel="stylesheet" href="assets/css/superclasses.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
+    <!-- Faviconlar -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#50161b">
+    <meta name="msapplication-TileColor" content="#50161b">
+    <meta name="theme-color" content="#50161b">
 </head>
 
 <body>
@@ -36,9 +44,8 @@
         <div class="wrapper">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <a class="navbar-brand" href="index.html">
-                    <figure class="mb-0">
-                        <img src="assets/images/logo.png" alt="logo">
-                    </figure>
+                    <h1 class="navbar-brand-text mb-0" style="font-size: 1.5rem;">
+                        Hakan Özgen</h1>
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -108,8 +115,7 @@
                         </figure>
                         <h4>Varis Tedavisi</h4>
                         <p>Modern yöntemlerle ağrısız ve ameliyatsız varis tedavisi uyguluyoruz.</p>
-                        <a href="#" onclick="openServiceModal('varisModal'); return false;">Detaylı Bilgi <i
-                                class="fas fa-angle-right"></i></a>
+                        <a href="adana_varis_tedavisi.html">Detaylı Bilgi <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="category-box" data-aos="fade-up" data-aos-duration="700">
@@ -119,8 +125,7 @@
                         </figure>
                         <h4>Botoks</h4>
                         <p>Kırışıklık tedavisi ve yüz gençleştirme için botoks uygulamaları yapıyoruz.</p>
-                        <a href="#" onclick="openServiceModal('botoksModal'); return false;">Detaylı Bilgi <i
-                                class="fas fa-angle-right"></i></a>
+                        <a href="adana_botoks_tedavisi.html">Detaylı Bilgi <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="category-box" data-aos="fade-up" data-aos-duration="700">
@@ -130,8 +135,7 @@
                         </figure>
                         <h4>Dolgu</h4>
                         <p>Dudak, yanak ve çene dolgusu ile yüz hatlarınızı belirginleştiriyoruz.</p>
-                        <a href="#" onclick="openServiceModal('dolguModal'); return false;">Detaylı Bilgi <i
-                                class="fas fa-angle-right"></i></a>
+                        <a href="adana_yuz_dudak_dolgusu.html">Detaylı Bilgi <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="category-box" data-aos="fade-up" data-aos-duration="700">
@@ -141,8 +145,7 @@
                         </figure>
                         <h4>Bacak Estetiği</h4>
                         <p>Bacak şekillendirme ve selülit tedavisi ile pürüzsüz bir görünüm sağlıyoruz.</p>
-                        <a href="#" onclick="openServiceModal('bacakModal'); return false;">Detaylı Bilgi <i
-                                class="fas fa-angle-right"></i></a>
+                        <a href="adana_bacak_estetigi.html">Detaylı Bilgi <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="category-box" data-aos="fade-up" data-aos-duration="700">
@@ -152,8 +155,7 @@
                         </figure>
                         <h4>Cilt Bakımı</h4>
                         <p>Medikal cilt bakımı ve anti-aging uygulamalarıyla cildinizi yeniliyoruz.</p>
-                        <a href="#" onclick="openServiceModal('ciltModal'); return false;">Detaylı Bilgi <i
-                                class="fas fa-angle-right"></i></a>
+                        <a href="adana_medikal_cilt_bakimi.html">Detaylı Bilgi <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="category-box" data-aos="fade-up" data-aos-duration="700">
@@ -163,8 +165,7 @@
                         </figure>
                         <h4>Mikro Cerrahi</h4>
                         <p>Modern mikro cerrahi teknikleriyle minimal invaziv varis tedavisi uyguluyoruz.</p>
-                        <a href="#" onclick="openServiceModal('mezoModal'); return false;">Detaylı Bilgi <i
-                                class="fas fa-angle-right"></i></a>
+                        <a href="adana_mikro_cerrahi_uzmani.html">Detaylı Bilgi <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="category-box" data-aos="fade-up" data-aos-duration="700">
@@ -175,8 +176,7 @@
                         <h4>Endolifting</h4>
                         <p>Ameliyatsız yüz germe ve cilt gençleştirme uygulamaları ile doğal ve kalıcı sonuçlar
                             sunuyoruz.</p>
-                        <a href="#" onclick="openServiceModal('endoModal'); return false;">Detaylı Bilgi <i
-                                class="fas fa-angle-right"></i></a>
+                        <a href="adana_endolifting.html">Detaylı Bilgi <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="category-box" data-aos="fade-up" data-aos-duration="700">
@@ -184,9 +184,9 @@
                         <figure class="service-icon mb-0">
                             <i class="fas fa-heart fa-3x" style="color: #50161b;"></i>
                         </figure>
-                        <h4>Güzellik ve Sağlık</h4>
-                        <p>Modern tıbbi yaklaşımla estetik uygulamaları birleştirerek, kişiye özel çözümler sunuyoruz.
-                        </p>
+                        <h4>Sertifikalı Sağlık Turizmi</h4>
+                        <p>Uluslararası hastalarımıza sertifikalı sağlık turizmi kapsamında güvenli ve kaliteli tedavi
+                            hizmetleri sunuyoruz.</p>
                         <a href="iletisim.html">Randevu Al <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
@@ -281,24 +281,45 @@
                     <figure>
                         <img src="assets/images/footer-logo.png" alt="footer-logo">
                     </figure>
-                    <p>Kalp ve damar cerrahisindeki uzmanlığımızı, estetik uygulamalarla birleştirerek kişiye özel
-                        çözümler sunuyoruz.</p>
+                    <p data-lang="footerDesc">Kalp ve damar cerrahisindeki uzmanlığımızı, estetik uygulamalarla
+                        birleştirerek kişiye özel çözümler sunuyoruz.</p>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-angle-right"></i><a href="kvkk.html" data-lang="footerKVKK"> KVKK</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="gizlilik_cerez_politikasi.html"
+                                data-lang="footerGizlilik"> Gizlilik ve Çerez Politikası</a></li>
+                    </ul>
                 </div>
                 <div class="footer-box footer-pages-links">
-                    <h4>Hizmetlerimiz</h4>
+                    <h4 data-lang="footerServices">Hizmetlerimiz</h4>
                     <ul class="list-unstyled mb-0">
-                        <li><i class="fas fa-angle-right"></i><a href="hizmetler.html">Varis Tedavisi</a></li>
-                        <li><i class="fas fa-angle-right"></i><a href="hizmetler.html">Botoks</a></li>
-                        <li><i class="fas fa-angle-right"></i><a href="hizmetler.html">Dolgu</a></li>
-                        <li><i class="fas fa-angle-right"></i><a href="hizmetler.html">Bacak Estetiği</a></li>
-                        <li><i class="fas fa-angle-right"></i><a href="hizmetler.html">Estetik Uygulamalar</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_varis_tedavisi.html"
+                                data-lang="footerVaris">Adana Varis Tedavisi</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_botoks_tedavisi.html"
+                                data-lang="footerBotoks">Adana
+                                Botoks Tedavisi</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_yuz_dudak_dolgusu.html"
+                                data-lang="footerDolgu">Adana Yüz ve Dudak Dolgusu</a>
+                        </li>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_bacak_estetigi.html"
+                                data-lang="footerBacak">Adana Bacak
+                                Estetiği</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_medikal_cilt_bakimi.html"
+                                data-lang="footerMedikal">Adana Medikal Cilt Bakımı</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_mikro_cerrahi_uzmani.html"
+                                data-lang="footerMikro">Adana Mikro Cerrahi Uzmanı</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="adana_endolifting.html"
+                                data-lang="footerEndolifting">Adana Endolifting</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="sertifikali_saglik_turizmi.html"
+                                data-lang="footerSertifikali">Sertifikalı Sağlık Turizmi</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="hakan_ozgen.html" data-lang="footerHakan">Hakan
+                                Özgen</a></li>
                     </ul>
                 </div>
                 <div class="footer-box contact-details-box">
-                    <h4>Contact Us</h4>
+                    <h4 data-lang="footerContact">Contact Us</h4>
                     <ul class="list-unstyled mb-0">
-                        <li><i class="fas fa-map-marker-alt"></i>Reşatbey mah. Stadyum Cd. No:27 Onur Apt kat:1, Adana,
-                            Turkey</li>
+                        <li><i class="fas fa-map-marker-alt"></i><span data-lang="footerAddress">Reşatbey mah. Stadyum
+                                Cd. No:27 Onur Apt kat:1, Adana, Turkey</span></li>
                         <li><i class="fas fa-headphones"></i><a href="tel:+905551022390">0555 102 23 90</a></li>
                     </ul>
                 </div>
@@ -308,7 +329,7 @@
     </section>
     <div class="copyright-con w-100 float-left text-center">
         <a href="https://jasmindigital.com.tr" target="_blank">
-            <p class="mb-0">Copyright © 2025 Jasmin Digital</p>
+            <p class="mb-0" data-lang="copyright">Copyright © 2025 Jasmin Digital</p>
         </a>
     </div>
 
@@ -388,23 +409,6 @@
         })
     </script>
     <script>
-        AOS.init();
-        function lightbox_open() {
-            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-            //   window.scrollTo(0, 0);
-            document.getElementById('light').style.display = 'block';
-            document.getElementById('fade1').style.display = 'block';
-            lightBoxVideo.play();
-        }
-
-        function lightbox_close() {
-            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-            document.getElementById('light').style.display = 'none';
-            document.getElementById('fade1').style.display = 'none';
-            lightBoxVideo.pause();
-        }
-    </script>
-    <script>
         $(document).ready(function () {
 
             var counters = $(".count");
@@ -444,334 +448,10 @@
             });
         });
     </script>
-
-    <!-- Service Modals -->
-    <div id="varisModal" class="service-modal">
-        <div class="service-modal-content">
-            <span class="service-close" onclick="closeServiceModal('varisModal')">&times;</span>
-            <h2>Varis Tedavisi</h2>
-            <div class="service-description">
-                <h3>Varis Nedir?</h3>
-                <p>Varis, toplardamarların genişleyerek, uzayıp bükülerek görünür hale gelmesidir. Dr. Hakan Özgen
-                    olarak, modern tıbbın en son teknikleriyle varis tedavisi sunuyoruz.</p>
-
-                <h3>Tedavi Yöntemlerimiz</h3>
-                <ul>
-                    <li>Köpük Skleroterapi</li>
-                    <li>Endovenöz Lazer Tedavisi</li>
-                    <li>Radyofrekans Ablasyon</li>
-                </ul>
-
-                <h3>Neden Biz?</h3>
-                <p>Kalp ve Damar Cerrahisi uzmanı olarak, varis tedavisinde 15 yılı aşkın deneyimimizle:</p>
-                <ul>
-                    <li>Ameliyatsız ve ağrısız tedavi</li>
-                    <li>Aynı gün sosyal hayata dönüş</li>
-                    <li>Yüksek başarı oranı</li>
-                    <li>Uzman hekim takibi</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="botoksModal" class="service-modal">
-        <div class="service-modal-content">
-            <span class="service-close" onclick="closeServiceModal('botoksModal')">&times;</span>
-            <h2>Botoks Uygulaması</h2>
-            <div class="service-description">
-                <h3>Botoks Nedir?</h3>
-                <p>Botoks, mimik çizgilerinin ve kırışıklıkların giderilmesinde kullanılan güvenli bir tedavi
-                    yöntemidir. Uzman ekibimizle doğal ve etkileyici sonuçlar elde ediyoruz.</p>
-
-                <h3>Uygulama Alanları</h3>
-                <ul>
-                    <li>Alın çizgileri</li>
-                    <li>Göz çevresi kırışıklıkları</li>
-                    <li>Kaş arası çizgiler</li>
-                    <li>Boyun bölgesi</li>
-                </ul>
-
-                <h3>Avantajları</h3>
-                <ul>
-                    <li>Hızlı uygulama (15-20 dakika)</li>
-                    <li>Anında sosyal hayata dönüş</li>
-                    <li>4-6 ay kalıcı etki</li>
-                    <li>Güvenli ve FDA onaylı ürünler</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="dolguModal" class="service-modal">
-        <div class="service-modal-content">
-            <span class="service-close" onclick="closeServiceModal('dolguModal')">&times;</span>
-            <h2>Dolgu Tedavisi</h2>
-            <div class="service-description">
-                <h3>Dolgu Tedavisi Nedir?</h3>
-                <p>Dolgu tedavisi, yüz hatlarını belirginleştirmek, dudakları dolgunlaştırmak ve yaşlanma belirtilerini
-                    azaltmak için uygulanan minimal invaziv bir estetik işlemdir. Hyalüronik asit bazlı dolgular
-                    kullanılarak yüz konturları yeniden şekillendirilir.</p>
-
-                <h3>Tedavi Yöntemleri</h3>
-                <ul>
-                    <li>Dudak dolgusu</li>
-                    <li>Yanak dolgusu</li>
-                    <li>Çene hattı şekillendirme</li>
-                    <li>Göz altı dolgusu</li>
-                    <li>Nasolabial kıvrım dolgusu</li>
-                </ul>
-
-                <h3>Avantajları</h3>
-                <ul>
-                    <li>Hızlı sonuç alma</li>
-                    <li>Doğal görünüm</li>
-                    <li>Minimal iyileşme süresi</li>
-                    <li>Uzun süre kalıcılık</li>
-                    <li>Geri döndürülebilir olması</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="bacakModal" class="service-modal">
-        <div class="service-modal-content">
-            <span class="service-close" onclick="closeServiceModal('bacakModal')">&times;</span>
-            <h2>Bacak Estetiği</h2>
-            <div class="service-description">
-                <h3>Bacak Estetiği Nedir?</h3>
-                <p>Bacak estetiği, selülit tedavisi ve bacak şekillendirme işlemlerini kapsayan bir dizi estetik
-                    uygulamadır. Modern teknolojiler ve özel teknikler kullanılarak bacaklardaki estetik sorunlar
-                    giderilir ve daha pürüzsüz bir görünüm elde edilir.</p>
-
-                <h3>Tedavi Yöntemleri</h3>
-                <ul>
-                    <li>Selülit tedavisi</li>
-                    <li>Bacak şekillendirme</li>
-                    <li>Lipoliz uygulamaları</li>
-                    <li>Lenf drenaj masajı</li>
-                    <li>Cilt sıkılaştırma</li>
-                </ul>
-
-                <h3>Avantajları</h3>
-                <ul>
-                    <li>Ameliyatsız çözüm</li>
-                    <li>Hızlı iyileşme</li>
-                    <li>Kalıcı sonuçlar</li>
-                    <li>Minimal yan etki</li>
-                    <li>Konforlu uygulama</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="ciltModal" class="service-modal">
-        <div class="service-modal-content">
-            <span class="service-close" onclick="closeServiceModal('ciltModal')">&times;</span>
-            <h2>Cilt Bakımı</h2>
-            <div class="service-description">
-                <h3>Medikal Cilt Bakımı Nedir?</h3>
-                <p>Medikal cilt bakımı, cildin sağlığını ve görünümünü iyileştirmek için uygulanan profesyonel tedavi
-                    yöntemlerini içerir. Kişiye özel planlanan bu uygulamalar, cilt problemlerinin çözümü ve anti-aging
-                    etkisiyle cildin gençleşmesini sağlar.</p>
-
-                <h3>Endolifting - Ameliyatsız Yüz Germe</h3>
-                <p>Endolifting, yüz ve boyun bölgesinde cildin altına özel iplikler yerleştirilerek, cildin sıkılaşması
-                    ve gençleşmesini sağlayan minimal invaziv bir yöntemdir. Ameliyatsız yüz germe olarak da bilinen bu
-                    uygulama, doğal ve kalıcı sonuçlar sunar.</p>
-
-                <h4>Endolifting Avantajları</h4>
-                <ul>
-                    <li>Ameliyatsız yüz germe</li>
-                    <li>Hızlı iyileşme süreci</li>
-                    <li>Doğal görünüm</li>
-                    <li>Uzun süreli etki (2-3 yıl)</li>
-                    <li>Minimal ağrı ve şişlik</li>
-                    <li>Anında sosyal hayata dönüş</li>
-                    <li>Kişiye özel planlama</li>
-                </ul>
-
-                <h3>Diğer Tedavi Yöntemleri</h3>
-                <ul>
-                    <li>Hydrafacial tedavi</li>
-                    <li>Kimyasal peeling</li>
-                    <li>Dermapen uygulaması</li>
-                    <li>LED terapi</li>
-                    <li>Akne tedavisi</li>
-                </ul>
-
-                <h3>Genel Avantajlar</h3>
-                <ul>
-                    <li>Cilt yenileme</li>
-                    <li>Leke giderimi</li>
-                    <li>Akne izlerinin azaltılması</li>
-                    <li>Cilt tonu eşitleme</li>
-                    <li>Nem dengesinin sağlanması</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="mezoModal" class="service-modal">
-        <div class="service-modal-content">
-            <span class="service-close" onclick="closeServiceModal('mezoModal')">&times;</span>
-            <h2>Mikro Cerrahi</h2>
-            <div class="service-description">
-                <h3>Mikro Cerrahi Nedir?</h3>
-                <p>Mikro cerrahi, özel mikroskoplar ve ince cerrahi aletler kullanılarak gerçekleştirilen hassas cerrahi
-                    işlemlerdir. Varis tedavisinde, küçük kesilerle yapılan minimal invaziv müdahaleleri içerir ve
-                    hastaların daha hızlı iyileşmesini sağlar.</p>
-
-                <h3>Uygulama Alanları</h3>
-                <ul>
-                    <li>Varis tedavisi</li>
-                    <li>Toplardamar cerrahisi</li>
-                    <li>Lenf damarı cerrahisi</li>
-                    <li>Periferik damar cerrahisi</li>
-                    <li>Kapakçık onarımı</li>
-                </ul>
-
-                <h3>Avantajları</h3>
-                <ul>
-                    <li>Minimal invaziv işlem</li>
-                    <li>Daha az doku hasarı</li>
-                    <li>Hızlı iyileşme süreci</li>
-                    <li>Daha az iz kalması</li>
-                    <li>Yüksek başarı oranı</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="endoModal" class="service-modal">
-        <div class="service-modal-content">
-            <span class="service-close" onclick="closeServiceModal('endoModal')">&times;</span>
-            <h2>Endolifting</h2>
-            <div class="service-description">
-                <h3>Endolifting Nedir?</h3>
-                <p>Endolifting, yüz ve boyun bölgesinde cildin altına özel iplikler yerleştirilerek, cildin sıkılaşması
-                    ve gençleşmesini sağlayan minimal invaziv bir yöntemdir. Ameliyatsız yüz germe olarak da bilinen bu
-                    uygulama, doğal ve kalıcı sonuçlar sunar.</p>
-
-                <h3>Uygulama Alanları</h3>
-                <ul>
-                    <li>Yüz germe</li>
-                    <li>Boyun germe</li>
-                    <li>Kaş kaldırma</li>
-                    <li>Yanak dolgunlaştırma</li>
-                    <li>Çene hattı belirginleştirme</li>
-                </ul>
-
-                <h3>Avantajları</h3>
-                <ul>
-                    <li>Ameliyatsız yüz germe</li>
-                    <li>Hızlı iyileşme süreci</li>
-                    <li>Doğal görünüm</li>
-                    <li>Uzun süreli etki (2-3 yıl)</li>
-                    <li>Minimal ağrı ve şişlik</li>
-                    <li>Anında sosyal hayata dönüş</li>
-                    <li>Kişiye özel planlama</li>
-                </ul>
-
-                <h3>İşlem Süreci</h3>
-                <ul>
-                    <li>Detaylı muayene ve değerlendirme</li>
-                    <li>Kişiye özel tedavi planı</li>
-                    <li>Lokal anestezi ile uygulama</li>
-                    <li>30-45 dakika süren işlem</li>
-                    <li>Düzenli takip ve kontrol</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <style>
-        .service-modal {
-            display: none;
-            position: fixed;
-            z-index: 9999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-
-        .service-modal-content {
-            background-color: #fff;
-            margin: 5% auto;
-            padding: 40px;
-            width: 70%;
-            max-width: 800px;
-            border-radius: 10px;
-            position: relative;
-        }
-
-        .service-close {
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            font-size: 30px;
-            font-weight: bold;
-            cursor: pointer;
-            color: #50161b;
-        }
-
-        .service-description {
-            margin-top: 30px;
-        }
-
-        .service-description h3 {
-            color: #50161b;
-            margin: 20px 0 10px;
-            font-size: 1.3em;
-        }
-
-        .service-description ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .service-description ul li {
-            padding: 5px 0;
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .service-description ul li:before {
-            content: "•";
-            color: #50161b;
-            position: absolute;
-            left: 0;
-        }
-
-        .service-modal-content h2 {
-            color: #50161b;
-            text-align: center;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #50161b;
-        }
-    </style>
-
-    <script>
-        function openServiceModal(modalId) {
-            document.getElementById(modalId).style.display = "block";
-            document.body.style.overflow = "hidden";
-        }
-
-        function closeServiceModal(modalId) {
-            document.getElementById(modalId).style.display = "none";
-            document.body.style.overflow = "auto";
-        }
-
-        window.onclick = function (event) {
-            if (event.target.classList.contains('service-modal')) {
-                event.target.style.display = "none";
-                document.body.style.overflow = "auto";
-            }
-        }
-    </script>
+    <a href="https://wa.me/905551022390?text=Merhaba,%20Op.%20Dr.%20Hakan%20Özgen%20ile%20görüşmek%20istiyorum."
+        class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 
 </html>
