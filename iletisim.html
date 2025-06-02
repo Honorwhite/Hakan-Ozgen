@@ -20,16 +20,7 @@
     <link rel="stylesheet" href="assets/css/superclasses.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfRuiorAAAAAAyMS_VT1ZjWrCNRnRmzaqyn-yNN"></script>
-    <!-- Faviconlar -->
-    <link rel="icon" href="assets/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#50161b">
-    <meta name="msapplication-TileColor" content="#50161b">
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc0tiorAAAAACIKqA5qtBjrkxFtMlibef3LWUws"></script>
 </head>
 
 <body>
@@ -270,13 +261,13 @@
         AOS.init();
     </script>
     <script>
-        $(document).ready(function () {
-            $('#contactpage').submit(function (e) {
+        $(document).ready(function() {
+            $('#contactpage').submit(function(e) {
                 e.preventDefault();
-
+                
                 // reCAPTCHA token al
-                grecaptcha.ready(function () {
-                    grecaptcha.execute('6LfRuiorAAAAAAyMS_VT1ZjWrCNRnRmzaqyn-yNN', { action: 'submit' }).then(function (token) {
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6Lc0tiorAAAAACIKqA5qtBjrkxFtMlibef3LWUws', {action: 'submit'}).then(function(token) {
                         // Form verilerini hazırla
                         var formData = {
                             adSoyad: $('#fname').val(),
@@ -289,15 +280,15 @@
 
                         // AJAX isteği gönder
                         $.ajax({
-                            url: 'API_ENDPOINT',
+                            url: 'https://randevu-backend2.vercel.app/api/randevu',
                             type: 'POST',
                             data: JSON.stringify(formData),
                             contentType: 'application/json',
-                            success: function (response) {
+                            success: function(response) {
                                 alert('Randevu talebiniz başarıyla alındı. En kısa sürede sizinle iletişime geçeceğiz.');
                                 $('#contactpage')[0].reset();
                             },
-                            error: function (xhr, status, error) {
+                            error: function(xhr, status, error) {
                                 alert('Bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.');
                                 console.error('Hata:', error);
                             }
