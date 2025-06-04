@@ -209,7 +209,7 @@
                     </ul>
                 </div>
                 <div class="footer-box contact-details-box">
-                    <h4 data-lang="footerContact">Contact Us</h4>
+                    <h4 data-lang="footerContact">İletişim</h4>
                     <ul class="list-unstyled mb-0">
                         <li><i class="fas fa-map-marker-alt"></i><span data-lang="footerAddress">Reşatbey mah. Stadyum
                                 Cd. No:27 Onur Apt kat:1, Adana, Turkey</span></li>
@@ -261,13 +261,13 @@
         AOS.init();
     </script>
     <script>
-        $(document).ready(function() {
-            $('#contactpage').submit(function(e) {
+        $(document).ready(function () {
+            $('#contactpage').submit(function (e) {
                 e.preventDefault();
-                
+
                 // reCAPTCHA token al
-                grecaptcha.ready(function() {
-                    grecaptcha.execute('6Lc0tiorAAAAACIKqA5qtBjrkxFtMlibef3LWUws', {action: 'submit'}).then(function(token) {
+                grecaptcha.ready(function () {
+                    grecaptcha.execute('6Lc0tiorAAAAACIKqA5qtBjrkxFtMlibef3LWUws', { action: 'submit' }).then(function (token) {
                         // Form verilerini hazırla
                         var formData = {
                             adSoyad: $('#fname').val(),
@@ -284,11 +284,11 @@
                             type: 'POST',
                             data: JSON.stringify(formData),
                             contentType: 'application/json',
-                            success: function(response) {
+                            success: function (response) {
                                 alert('Randevu talebiniz başarıyla alındı. En kısa sürede sizinle iletişime geçeceğiz.');
                                 $('#contactpage')[0].reset();
                             },
-                            error: function(xhr, status, error) {
+                            error: function (xhr, status, error) {
                                 alert('Bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.');
                                 console.error('Hata:', error);
                             }
