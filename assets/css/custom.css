@@ -3188,3 +3188,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .meta-info span {
     margin-right: 20px;
 }
+
+/* Footer link hover efektini güncelle */
+.footer-main-section .footer-inner-con a:hover {
+    color: white !important;
+    /* Koyu bordo veya marka rengi, kırmızı değil */
+    text-decoration: underline;
+    transition: color 0.2s;
+}
