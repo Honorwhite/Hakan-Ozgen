@@ -37,15 +37,15 @@
     [
       {
         "@context": "https://schema.org",
-        "@type": "MedicalBusiness",
+        "@type": "#MedicalBusiness",
         "name": "Op. Dr. Hakan Özgen Varis Tedavi Merkezi",
         "image": "https://hakanozgen.com/assets/images/footer-logo.png",
         "description": "Adana'da mikro cerrahi uzmanı Op. Dr. Hakan Özgen ile el, damar, sinir ve rekonstrüktif mikro cerrahi tedavileri. Modern teknikler ve ileri deneyim.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Reşatbey mah. Stadyum Cd. No:27 Onur Apt kat:1",
-          "addressLocality": "Adana",
-          "addressRegion": "Seyhan",
+           "addressLocality": "Seyhan",
+            "addressRegion": "Adana",
           "postalCode": "01120",
           "addressCountry": "TR"
         },
@@ -102,6 +102,30 @@
       }
     ]
     </script>
+    <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Physician",
+  "name":"Op. Dr. Hakan Özgen",
+  "url":"https://hakanozgen.com/",
+  "telephone":"+905551022390",
+  "worksFor":{"@id":"https://hakanozgen.com/#medicalbusiness"},
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Reşatbey mah. Stadyum Cd. No:27 Onur Apt kat:1",
+    "addressLocality":"Seyhan",
+    "addressRegion":"Adana",
+    "postalCode":"01120",
+    "addressCountry":"TR"
+    availableService": [
+  {"@type":"MedicalProcedure","name":"Varis Tedavisi"},
+  {"@type":"MedicalProcedure","name":"Lazer Varis Tedavisi"},
+  {"@type":"MedicalProcedure","name":"Endolift"}
+  {"@type":"MedicalProcedure","name":"Köpük Varis Tedavisi"}
+]
+  }
+}
+</script>
 </head>
 
 <body>
