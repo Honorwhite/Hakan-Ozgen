@@ -118,6 +118,151 @@
 
         gtag('config', 'AW-17738583511');
     </script>
+    <style>
+        /* Custom CSS for Instagram Reels Carousel */
+        .instagram-reel-card {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px 24px;
+        }
+
+        .instagram-card-link {
+            text-decoration: none !important;
+            display: block;
+        }
+
+        .instagram-card-link:hover .instagram-reel-card {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(80, 22, 27, 0.25);
+        }
+
+        .instagram-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.85) 100%);
+            transition: background 0.4s ease;
+            z-index: 1;
+        }
+
+        .instagram-card-link:hover .instagram-overlay {
+            background: linear-gradient(to bottom, rgba(80, 22, 27, 0.2) 0%, rgba(80, 22, 27, 0.4) 40%, rgba(80, 22, 27, 0.9) 100%);
+        }
+
+        .instagram-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .instagram-play-icon {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            width: 68px;
+            height: 68px;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            z-index: 2;
+            box-shadow: 0 8px 25px rgba(214, 36, 159, 0.4);
+        }
+
+        .instagram-card-link:hover .instagram-play-icon {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .instagram-card-content {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+        }
+
+        .instagram-card-content h4 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            transition: transform 0.4s ease;
+        }
+
+        .watch-on-instagram {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            opacity: 0.85;
+            transition: gap 0.3s ease, opacity 0.3s ease;
+        }
+
+        .instagram-card-link:hover .watch-on-instagram {
+            opacity: 1;
+            gap: 10px;
+        }
+
+        /* Navigation styling overrides for custom carousel */
+        .instagram-videos-section .owl-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .instagram-videos-section .owl-nav button.owl-prev,
+        .instagram-videos-section .owl-nav button.owl-next {
+            background: #50161b !important;
+            color: #fff !important;
+            width: 44px;
+            height: 44px;
+            border-radius: 50% !important;
+            font-size: 18px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .instagram-videos-section .owl-nav button.owl-prev:hover,
+        .instagram-videos-section .owl-nav button.owl-next:hover {
+            background: #731e25 !important;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 
 <body>
@@ -540,84 +685,107 @@
         </div>
     </div>
     <!-- COUNTER SECTION -->
-    <!-- VIDEO SECTION -->
-    <section class="blogs-section w-100 float-left padding-top padding-bottom">
+    <!-- INSTAGRAM VIDEOS SECTION -->
+    <section class="blogs-section instagram-videos-section w-100 float-left padding-top padding-bottom">
         <div class="container">
             <div class="generic-title text-center" data-aos="fade-up" data-aos-duration="700">
                 <span class="sub-txt d-block" data-lang="videosTitle">VİDEOLARIMIZ</span>
-                <h2 data-lang="videosSubtitle">MERAK ETTİKLERİNİZ</h2>
+                <h2 data-lang="videosSubtitle">Bizi Instagram'da Takip Edin</h2>
             </div>
-            <div class="blogs-inner-con" data-aos="fade-up" data-aos-duration="700">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="blog-box video-box">
-                            <div class="blog-img-box">
-                                <img src="assets/images/varisnedir.jpg" alt="video-cover" class="img-fluid">
-                                <div class="video-play-btn">
-                                    <a href="javascript:void(0)" class="video-play-button"
-                                        data-video="https://www.youtube.com/embed/nn8KK7s7TiE">
-                                        <i class="fas fa-play"></i>
-                                    </a>
+
+            <div class="blogs-inner-con" data-aos="fade-up" data-aos-duration="700" style="margin-top: 50px;">
+                <div id="owl-carousel-instagram" class="owl-carousel owl-theme">
+
+                    <!-- Card 1 (Varis Nedir) -->
+                    <div class="item">
+                        <a href="https://www.instagram.com/p/DNIJoa9oUF_/" target="_blank" class="instagram-card-link">
+                            <div class="instagram-reel-card"
+                                style="background-image: url('assets/images/kapak/kapak1.jpg');"
+                                alt="Varis tedavisi için doğru zamanı mı bekliyorsun?">
+                                <div class="instagram-overlay"></div>
+                                <div class="instagram-badge">
+                                    <i class="fab fa-instagram"></i> Reels
+                                </div>
+                                <div class="instagram-play-icon">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </div>
+                                <div class="instagram-card-content">
+                                    <h4>Varis tedavisi için doğru zamanı mı bekliyorsun?</h4>
+                                    <span class="watch-on-instagram">Instagram'da İzle <i
+                                            class="fas fa-angle-right"></i></span>
                                 </div>
                             </div>
-                            <div class="blog-details">
-                                <h4><a href="javascript:void(0)" class="video-title"
-                                        data-video="https://www.youtube.com/embed/nn8KK7s7TiE"
-                                        data-lang="varisNedir">Varis Nedir?</a></h4>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="col-md-4">
-                        <div class="blog-box video-box">
-                            <div class="blog-img-box">
-                                <img src="assets/images/varistedaviedilmezse.jpg" alt="video-cover" class="img-fluid">
-                                <div class="video-play-btn">
-                                    <a href="javascript:void(0)" class="video-play-button"
-                                        data-video="https://www.youtube.com/embed/RYEFBwAJ6MI">
-                                        <i class="fas fa-play"></i>
-                                    </a>
+
+                    <div class="item">
+                        <a href="https://www.instagram.com/p/DMxvR7CoKx_/" target="_blank" class="instagram-card-link">
+                            <div class="instagram-reel-card"
+                                style="background-image: url('assets/images/kapak/kapak2.jpg');"
+                                alt="Endolift uygulaması sadece yüz için değil!">
+                                <div class="instagram-overlay"></div>
+                                <div class="instagram-badge">
+                                    <i class="fab fa-instagram"></i> Reels
+                                </div>
+                                <div class="instagram-play-icon">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </div>
+                                <div class="instagram-card-content">
+                                    <h4>Endolift uygulaması sadece yüz için değil!</h4>
+                                    <span class="watch-on-instagram">Instagram'da İzle <i
+                                            class="fas fa-angle-right"></i></span>
                                 </div>
                             </div>
-                            <div class="blog-details">
-                                <h4><a href="javascript:void(0)" class="video-title"
-                                        data-video="https://www.youtube.com/embed/RYEFBwAJ6MI"
-                                        data-lang="varisTedaviEdilmezse">Varis Tedavi Edilmezse Ne
-                                        Olur?</a></h4>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="col-md-4">
-                        <div class="blog-box video-box">
-                            <div class="blog-img-box">
-                                <img src="assets/images/variskendiliginden.jpg" alt="video-cover" class="img-fluid">
-                                <div class="video-play-btn">
-                                    <a href="javascript:void(0)" class="video-play-button"
-                                        data-video="https://www.youtube.com/embed/EVWpGfmdvWU">
-                                        <i class="fas fa-play"></i>
-                                    </a>
+
+                    <div class="item">
+                        <a href="https://www.instagram.com/p/DMp1HiCIVik/" target="_blank" class="instagram-card-link">
+                            <div class="instagram-reel-card"
+                                style="background-image: url('assets/images/kapak/kapak3.jpg');"
+                                alt="Havalar ısındı, bacaklar ağrımaya başladı">
+                                <div class="instagram-overlay"></div>
+                                <div class="instagram-badge">
+                                    <i class="fab fa-instagram"></i> Reels
+                                </div>
+                                <div class="instagram-play-icon">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </div>
+                                <div class="instagram-card-content">
+                                    <h4>Havalar ısındı, bacaklar ağrımaya başladı</h4>
+                                    <span class="watch-on-instagram">Instagram'da İzle <i
+                                            class="fas fa-angle-right"></i></span>
                                 </div>
                             </div>
-                            <div class="blog-details">
-                                <h4><a href="javascript:void(0)" class="video-title"
-                                        data-video="https://www.youtube.com/embed/EVWpGfmdvWU"
-                                        data-lang="varisKendiliginden">Varis Kendiliğinden Geçer
-                                        mi?</a></h4>
-                            </div>
-                        </div>
+                        </a>
                     </div>
+
+                    <div class="item">
+                        <a href="https://www.instagram.com/p/DKZ37ZfodmI/" target="_blank" class="instagram-card-link">
+                            <div class="instagram-reel-card"
+                                style="background-image: url('assets/images/kapak/kapak4.jpg');"
+                                alt="Endolift Uygulamaları">
+                                <div class="instagram-overlay"></div>
+                                <div class="instagram-badge">
+                                    <i class="fab fa-instagram"></i> Reels
+                                </div>
+                                <div class="instagram-play-icon">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </div>
+                                <div class="instagram-card-content">
+                                    <h4>Endolift Uygulamaları</h4>
+                                    <span class="watch-on-instagram">Instagram'da İzle <i
+                                            class="fas fa-angle-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
-
-        <!-- Video Modal -->
-        <div class="video-modal" id="videoModal">
-            <div class="video-modal-content">
-                <span class="video-close">&times;</span>
-                <iframe id="videoFrame" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
     </section>
-    <!-- VIDEO SECTION -->
+    <!-- INSTAGRAM VIDEOS SECTION -->
 
     <!-- GET IN TOUCH SECTION -->
     <section class="get-in-touch-section w-100 float-left">
@@ -848,41 +1016,26 @@
         });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get the modal
-            var modal = document.getElementById("videoModal");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("video-close")[0];
-
-            // Get the iframe element
-            var iframe = document.getElementById("videoFrame");
-
-            // Get all video trigger buttons
-            var videoButtons = document.querySelectorAll(".video-play-button, .video-title, .video-link");
-
-            // When the user clicks on the button, open the modal
-            videoButtons.forEach(function (button) {
-                button.onclick = function () {
-                    var videoUrl = this.getAttribute("data-video");
-                    iframe.src = videoUrl;
-                    modal.style.display = "block";
+        $(document).ready(function () {
+            $('#owl-carousel-instagram').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
                 }
             });
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-                iframe.src = "";
-                modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    iframe.src = "";
-                    modal.style.display = "none";
-                }
-            }
         });
     </script>
     <script>
@@ -929,7 +1082,7 @@
                 reviewsTitle: "Danışan Yorumlarımız",
                 reviewsSubtitle: "Danışanlarımız bizim hakkımızda ne diyor?",
                 videosTitle: "VİDEOLARIMIZ",
-                videosSubtitle: "MERAK ETTİKLERİNİZ",
+                videosSubtitle: "Bizi Instagram'da Takip Edin",
                 varisNedir: "Varis Nedir?",
                 varisTedaviEdilmezse: "Varis Tedavi Edilmezse Ne Olur?",
                 varisKendiliginden: "Varis Kendiliğinden Geçer mi?",
@@ -1019,7 +1172,7 @@
                 reviewsTitle: "Patient Reviews",
                 reviewsSubtitle: "What do our patients say about us?",
                 videosTitle: "OUR VIDEOS",
-                videosSubtitle: "WHAT YOU WONDER",
+                videosSubtitle: "Follow Us on Instagram",
                 varisNedir: "What is Varicose Vein?",
                 varisTedaviEdilmezse: "What Happens if Varicose Vein is Not Treated?",
                 varisKendiliginden: "Does Varicose Vein Go Away on Its Own?",
